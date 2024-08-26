@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <title>music player</title>
+</head>
+<body>
+    <div id="welcome" class="welcome">
+        <div class="decriaption">
+            <h2>welcome to my music player and I hope you enjoy it</h2>
+            <button id="lets-start">let's start</button>
+        </div>
+    </div>
+
+    <div id="all" class="all">
+        <div class="navbar">
+            <span class="flash"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
+            <h2>Now Playing</h2>
+            <span class="sidebar-button"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+        </div>
+        <!-- //////////////////////////////////////// -->
+
+         <!-- <div class="sidebar"></div> -->
+
+          <!-- ///////////////////////////////////////// -->
+
+          <div class="information">
+
+            <div class="img-uploder">
+                <img id="img" src="G" alt="img of music">
+            </div>
+            <div class="text-info">
+                <h3 class="name"></h3>
+                <p class="info"></p>
+            </div>
+          </div>
+          <!-- /////////////////////////////////////////////////////////// -->
+
+          <div class="music-time">
+            <div class="time-past"></div>
+            <div class="time-line">
+                <div id="time-line"></div>
+            </div>
+            <audio id="music-Player" src=""></audio>
+            <div class="main-time"></div>
+          </div>
+          <!-- /////////////////////////////////////////////////////////// -->
+
+          <div class="music-icons">
+            <div class="tipe-of-skip">
+                <span  class="contorol" id="skip"><i title="Playing looped" id="skip-icon" class="fa fa-repeat" aria-hidden="true"></i></span>
+            </div>
+            <div class="contorol-icons">
+                <span id="previus"><i class="fa fa-backward" aria-hidden="true"></i></span>
+                <span id="stop"><i class="fa fa-stop" aria-hidden="true"></i></span>
+                <span id="start"><i class="fa fa-play" aria-hidden="true"></i></span>
+                <span id="next"><i class="fa fa-forward" aria-hidden="true"></i></span>
+            </div>
+            <div class="list">
+                <span id="list-icon"><i class="fa fa-list" aria-hidden="true"></i></span>
+                <ul id="list">
+                    <div class="list-navbar">
+                        <h3>the list of musics</h3>
+                        <span id="close-list"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                    </div>
+                </ul>
+            </div>
+          </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
